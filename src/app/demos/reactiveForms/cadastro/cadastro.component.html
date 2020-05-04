@@ -1,0 +1,30 @@
+<div class="container main-container">
+  <form novalidate (ngSubmit)="adicionarUsuario()" [formGroup]="cadastroForm">
+    <div class="form-group">
+      <label for="txtNomeCompleto">Nome Completo</label>
+      <input type="text" class="form-control" id="txtNomeCompleto" formControlName="nome">
+    </div>
+    <div class="form-group">
+      <label for="txtCpf">CPF</label>
+      <input type="txt" class="form-control" id="txtCpf">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">E-mail</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeHolder="E-mail (requerido)">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="txtSenha">Senha</label>
+      <input type="password" class="form-control" id="txtSenha">
+    </div>
+    <div class="form-group">
+      <label for="txtSenhaConfirmacao">Confirme a Senha</label>
+      <input type="password" class="form-control" id="txtSenhaConfirmacao">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
